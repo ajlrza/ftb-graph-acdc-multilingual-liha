@@ -1,0 +1,10 @@
+{
+  "model": "gpt2",
+  "n_in_graph_heads": 100,
+  "n_out_graph_heads": 44,
+  "baseline_metric_mean": 1.2428083419799805,
+  "completeness_drop_mean": 0.594678529103597,
+  "completeness_drop_std": 1.1262391096794082,
+  "out_of_graph_drop_mean": 0.48509623209635416,
+  "out_of_graph_drop_std": 1.106959661121053
+}

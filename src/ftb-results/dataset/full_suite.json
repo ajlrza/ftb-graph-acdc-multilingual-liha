@@ -1,0 +1,205 @@
+[
+  {
+    "prompt": "The capital of France",
+    "corrupted": "法国的首都",
+    "target_lang": "en",
+    "foil_lang": "zh",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Water boils at one hundred degrees",
+    "corrupted": "Thủ đô của Pháp",
+    "target_lang": "en",
+    "foil_lang": "vi",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "The sun rises in the",
+    "corrupted": "El agua hierve a cien grados",
+    "target_lang": "en",
+    "foil_lang": "es",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "La capitale de la France",
+    "corrupted": "Water boils at one hundred degrees",
+    "target_lang": "fr",
+    "foil_lang": "en",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "L'eau bout à cent degrés",
+    "corrupted": "La capital de Francia",
+    "target_lang": "fr",
+    "foil_lang": "es",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Le soleil se lève à l'",
+    "corrupted": "Столица Франции",
+    "target_lang": "fr",
+    "foil_lang": "ru",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "La capital de Francia",
+    "corrupted": "Thủ đô của Pháp",
+    "target_lang": "es",
+    "foil_lang": "vi",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "El agua hierve a cien grados",
+    "corrupted": "La capitale de la France",
+    "target_lang": "es",
+    "foil_lang": "fr",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "El sol sale por el",
+    "corrupted": "Вода кипит при ста градусах",
+    "target_lang": "es",
+    "foil_lang": "ru",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Thủ đô của Pháp",
+    "corrupted": "Вода кипит при ста градусах",
+    "target_lang": "vi",
+    "foil_lang": "ru",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Nước sôi ở một trăm độ",
+    "corrupted": "Столица Франции",
+    "target_lang": "vi",
+    "foil_lang": "ru",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Mặt trời mọc ở",
+    "corrupted": "Столица Франции",
+    "target_lang": "vi",
+    "foil_lang": "ru",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "法国的首都",
+    "corrupted": "El sol sale por el",
+    "target_lang": "zh",
+    "foil_lang": "es",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "水在一百度",
+    "corrupted": "The capital of France",
+    "target_lang": "zh",
+    "foil_lang": "en",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "太阳从",
+    "corrupted": "Столица Франции",
+    "target_lang": "zh",
+    "foil_lang": "ru",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Столица Франции",
+    "corrupted": "Nước sôi ở một trăm độ",
+    "target_lang": "ru",
+    "foil_lang": "vi",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Вода кипит при ста градусах",
+    "corrupted": "El sol sale por el",
+    "target_lang": "ru",
+    "foil_lang": "es",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "Солнце всходит на",
+    "corrupted": "フランスの首都",
+    "target_lang": "ru",
+    "foil_lang": "ja",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "フランスの首都",
+    "corrupted": "La capitale de la France",
+    "target_lang": "ja",
+    "foil_lang": "fr",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "水は百度で",
+    "corrupted": "La capital de Francia",
+    "target_lang": "ja",
+    "foil_lang": "es",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "太陽は",
+    "corrupted": "Water boils at one hundred degrees",
+    "target_lang": "ja",
+    "foil_lang": "en",
+    "suite": "neutral"
+  },
+  {
+    "prompt": "I think the capital of France, c'est-à-dire la capitale, est",
+    "corrupted": "Thủ đô của Pháp",
+    "target_lang": "fr",
+    "foil_lang": "vi",
+    "suite": "code_switch"
+  },
+  {
+    "prompt": "I believe the capital of Spain, es decir la capital, es",
+    "corrupted": "太陽は",
+    "target_lang": "es",
+    "foil_lang": "ja",
+    "suite": "code_switch"
+  },
+  {
+    "prompt": "I think the capital city, tức là thủ đô, là",
+    "corrupted": "Столица Франции",
+    "target_lang": "vi",
+    "foil_lang": "ru",
+    "suite": "code_switch"
+  },
+  {
+    "prompt": "I think the capital, namely 首都, 是",
+    "corrupted": "La capitale de la France",
+    "target_lang": "zh",
+    "foil_lang": "fr",
+    "suite": "code_switch"
+  },
+  {
+    "prompt": "I think the capital, that is столица, это",
+    "corrupted": "水在一百度",
+    "target_lang": "ru",
+    "foil_lang": "zh",
+    "suite": "code_switch"
+  },
+  {
+    "prompt": "I think the capital, that is 首都, は",
+    "corrupted": "太阳从",
+    "target_lang": "ja",
+    "foil_lang": "zh",
+    "suite": "code_switch"
+  },
+  {
+    "prompt": "La Tour Eiffel se trouve à",
+    "corrupted": "El sol sale por el",
+    "target_lang": "fr",
+    "foil_lang": "es",
+    "suite": "semantic_congruent"
+  },
+  {
+    "prompt": "La Grande Muraille se trouve en",
+    "corrupted": "El sol sale por el",
+    "target_lang": "fr",
+    "foil_lang": "es",
+    "suite": "semantic_incongruent"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "model": "bigscience/bloom-560m",
+  "n_in_graph_heads": 104,
+  "n_out_graph_heads": 280,
+  "baseline_metric_mean": 16.562118166968936,
+  "completeness_drop_mean": 1.6700567290896462,
+  "completeness_drop_std": 3.5560536788489374,
+  "out_of_graph_drop_mean": 11.395138944898333,
+  "out_of_graph_drop_std": 21.170617478318203
+}
