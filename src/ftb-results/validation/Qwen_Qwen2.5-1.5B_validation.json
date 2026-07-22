@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_in_graph_heads": 156,
+  "n_out_graph_heads": 180,
+  "baseline_metric_mean": 5.837865556989398,
+  "completeness_drop_mean": 1.4114997727530343,
+  "completeness_drop_std": 2.485310566125776,
+  "out_of_graph_drop_mean": 5.670570487067813,
+  "out_of_graph_drop_std": 5.612656794524835
+}
