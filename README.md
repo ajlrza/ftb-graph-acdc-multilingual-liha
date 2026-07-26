@@ -89,3 +89,59 @@ Notebooks assume a Kaggle T4×2 GPU runtime and load models in fp32 (recommended
 gradients are noisy/underflow-prone near zero). Larger models (Qwen2.5-7B pair, aya-expanse-8b)
 are loaded in 4-bit via `bitsandbytes` to fit in memory; the 1.5B pair and all standalone models
 load in full precision.
+
+## Steps to Reproduce
+
+# Clone and instantiate environment
+```bash
+git clone https://github.com/your-username/ftb-graph.git
+cd src
+python3 -m venv venv
+source venv/bin/activate
+```
+
+# Install exact pinned versions
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+# Configure the Path in Stage 0 accordingly
+```bash
+# In Stage 0 cell:
+from pathlib import Path
+
+# Set WORK_DIR to the 'src' root relative to the repository layout
+WORK_DIR   = Path("../").resolve()  # or Path("./") if executing inside src/
+DATA_DIR   = WORK_DIR / 'dataset'
+EAP_DIR    = WORK_DIR / 'eap'
+VERIFY_DIR = WORK_DIR / 'verify'
+GRAPH_DIR  = WORK_DIR / 'graphs'
+VALID_DIR  = WORK_DIR / 'validation'
+```
+
+# Run the pipeline
+## 1. Via VS Code / Jupyter Notebook / Kaggle / Google Colab
+```bash
+Open src/ftb_graph_notebooks/ftb-graph-notebook.ipynb in VS Code or Jupyter Lab.
+
+Select your Python kernel containing the installed requirements.txt.
+
+Click Run All (or execute cells sequentially from Stage 0 to Stage 12).
+```
+## 2. Via CLI command
+```bash
+cd src/ftb_graph_notebooks
+
+jupyter nbconvert --to notebook --execute ftb-graph-notebook.ipynb \
+  --output executed_ftb_graph.ipynb \
+  --ExecutePreprocessor.timeout=-1
+```
+
+# Verify the pipeline execution
+Once the run completes (Stages 0–12), check that the subdirectories in src/ have populated with the output JSONs and PNGs:
+* **`src/dataset/`**: Reads `full_suite.json` (the 29-item benchmark).
+* **`src/eap/`**: Generates `{tag}_node_attr.json` and `{tag}_eap.json` (Stages 4–5).
+* **`src/verify/`**: Generates `{tag}_verify.json` containing exact patching deltas (Stage 7).
+* **`src/validation/`**: Generates `{tag}_validation.json` with completeness/out-of-graph drop metrics (Stage 9).
+* **`src/graphs/`**: Renders `{tag}_dag.png` visual circuit plots (Stage 8/10).
