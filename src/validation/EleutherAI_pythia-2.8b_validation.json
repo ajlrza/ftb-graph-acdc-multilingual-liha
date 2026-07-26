@@ -1,0 +1,10 @@
+{
+  "model": "EleutherAI/pythia-2.8b",
+  "n_in_graph_heads": 415,
+  "n_out_graph_heads": 609,
+  "baseline_metric_mean": 4.842426345461891,
+  "completeness_drop_mean": 2.250797816685268,
+  "completeness_drop_std": 3.113870664044539,
+  "out_of_graph_drop_mean": 1.3516848882039387,
+  "out_of_graph_drop_std": 2.31349418385049
+}
