@@ -13,21 +13,13 @@ circuit validation (necessity / out-of-graph irrelevance / sufficiency) → DAG 
 ```
 src/
 ├── dataset/
-│   └── full_suite.json            # 29-item multilingual benchmark (see Dataset below)
+│   └── full_suite.json                                     # 29-item multilingual benchmark (see Dataset below)
+├── eap/                                                    # {tag}_node_attr.json, {tag}_eap.json   (Stages 4–5 output, one pair per model)
 ├── ftb_graph_notebooks/
-│   ├── ftb-graph-pythia-and-aya.ipynb                          # standalone-arm pipeline notebook
-│   │                                                             # (currently configured to run
-│   │                                                             #  bloom-560m + aya-expanse-8b —
-│   │                                                             #  see Known Gaps)
-│   ├── ftb_graph_qwen_pair_A/
-│   │   └── ftb-graph-qwen-pair-a.ipynb                         # base-to-instruct arm: 1.5B & 7B
-│   └── ftb_graph_qwen_pair_B/
-│       ├── ftb-graph-qwen2-5-1.5b-base-to-7b-base.ipynb        # scaling arm: base 1.5B → base 7B
-│       └── ftb-graph-qwen2-5-1.5b-instruct-to-7b-instruct.ipynb # scaling arm: instruct 1.5B → instruct 7B
-├── eap/          # {tag}_node_attr.json, {tag}_eap.json   (Stages 4–5 output, one pair per model)
+│   └── ftb-graph-notebook.ipynb                            # aggregated pipeline notebook covering both qwen pair and standalone models
 ├── verify/       # {tag}_verify.json                       (Stage 7: exact-patching verification)
 ├── validation/   # {tag}_validation.json                   (Stage 9: three-check validation)
-└── graphs/       # {tag}_dag.png                            (Stage 8: verified circuit DAG)
+└── graphs/       # {tag}_dag.png                           (Stage 8: verified circuit DAG)
 ```
 
 `{tag}` = the HF model name with `/` replaced by `_`, e.g. `Qwen_Qwen2.5-1.5B`, `gpt2`,
@@ -35,18 +27,16 @@ src/
 
 ## Models covered
 
-| Model |
-|---|:-:|:-:|:-:|:-:|---|
-| gpt2 | 
-| bigscience/bloom-560m |
-| EleutherAI/pythia-1b | 
-| EleutherAI/pythia-2.8b |
-| Qwen/Qwen2.5-1.5B |
-| Qwen/Qwen2.5-1.5B-Instruct |
-| Qwen/Qwen2.5-7B |
-| Qwen/Qwen2.5-7B-Instruct | 
+| Model | Parameters | Classification |
+| :--- | :--- | :--- |
+| `gpt2` | 124M | STANDALONE |
+| `bigscience/bloom-560m` | 560M | STANDALONE |
+| `EleutherAI/pythia-1b` | 1B | STANDALONE |
+| `EleutherAI/pythia-2.8b` | 2.8B | STANDALONE |
+| `Qwen/Qwen2.5-1.5B` | 1.5B | PAIR |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1.5B | PAIR |
 
-Eight architectures total. Four have the complete pipeline (standalone arm); the base-to-instruct
+Six architectures total. Four have the complete pipeline (standalone arm); the base-to-instruct
 and scaling arms are partially complete (see Known Gaps).
 
 ## Dataset
