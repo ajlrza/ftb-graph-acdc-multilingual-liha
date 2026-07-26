@@ -1,10 +1,10 @@
 {
   "model": "bigscience/bloom-560m",
-  "n_in_graph_heads": 104,
-  "n_out_graph_heads": 280,
-  "baseline_metric_mean": 16.562118166968936,
-  "completeness_drop_mean": 1.6700567290896462,
-  "completeness_drop_std": 3.5560536788489374,
-  "out_of_graph_drop_mean": 11.395138944898333,
-  "out_of_graph_drop_std": 21.170617478318203
+  "n_in_graph_heads": 188,
+  "n_out_graph_heads": 196,
+  "baseline_metric_mean": 23.543082396189373,
+  "completeness_drop_mean": 1.8526654697599865,
+  "completeness_drop_std": 2.416946227238076,
+  "out_of_graph_drop_mean": 1.2243955021812802,
+  "out_of_graph_drop_std": 3.3890333522116642
 }
