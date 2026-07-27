@@ -63,8 +63,7 @@ validation results.
    attention head's contribution to the language-identity metric.
 3. **Edge Attribution Patching** (`eap/{tag}_eap.json`) — scores every candidate
    `(src head → dst layer)` edge in one backward pass.
-4. **Graph construction** — top-K EAP edges (K scaled to ~8% of the model's total heads, floor 15 /
-   ceiling 60) become the verification shortlist.
+4. **Graph construction** — top-K EAP edges
 5. **Exact-patching verification** (`verify/{tag}_verify.json`) — each shortlisted edge is
    re-checked with real activation patching (not gradient-based) to confirm sign and magnitude.
 6. **Verified graph + DAG plot** (`graphs/{tag}_dag.png`) — keeps only edges EAP flagged *and*
