@@ -1,6 +1,6 @@
-# FTB-Graph: Language-Identity Circuit Discovery via Edge Attribution Patching
+# FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Models
 
-Code and results for **First-Token Broadcasters**: identifying and validating the attention-head
+Code and results for **FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Modelss**: identifying and validating the attention-head
 circuits ("language identity heads") that determine which language a multilingual LM commits to
 at its first generated token.
 
